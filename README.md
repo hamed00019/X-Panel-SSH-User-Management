@@ -89,7 +89,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/Alirezad07/X-Panel-SSH-User-Ma
 ## بهینه سازی سرور
 نصب و حذف تنظیمات با دستور زیر 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/Alirezad07/X-Panel-SSH-User-Management/main/TCP-Tweaker --ipv4)
+bash <(curl -Ls https://raw.githubusercontent.com/hamed00019/X-Panel-SSH-User-Management/main/TCP-Tweaker --ipv4)
 ```
 ## فعال سازی SSL
 ```
