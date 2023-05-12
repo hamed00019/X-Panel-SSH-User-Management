@@ -1,5 +1,5 @@
 #!/bin/bash
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-20s\n' "TCP Tweaker 2.1 by hamed00019" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-20s\n' "TCP Tweaker 2.2 by hamed00019" ; tput sgr0
 if [[ `grep -c "^#PH56" /etc/sysctl.conf` -eq 1 ]]
 then
 	echo ""
@@ -50,8 +50,8 @@ net.ipv6.conf.all.accept_redirects = 0
 net.ipv6.conf.all.disable_ipv6 = 0
 net.ipv6.conf.all.forwarding = 1
 net.ipv6.conf.default.disable_ipv6 = 0
-vm.swappiness=10
-vm.vfs_cache_pressure=50" /etc/sysctl.conf > /tmp/syscl && mv /tmp/syscl /etc/sysctl.conf
+vm.swappiness = 10
+vm.vfs_cache_pressure = 50" /etc/sysctl.conf > /tmp/syscl && mv /tmp/syscl /etc/sysctl.conf
 sysctl -p /etc/sysctl.conf > /dev/null
 		echo ""
 		echo "TCP Tweaker network settings were successfully removed."
@@ -115,8 +115,8 @@ net.ipv6.conf.all.accept_redirects = 0
 net.ipv6.conf.all.disable_ipv6 = 0
 net.ipv6.conf.all.forwarding = 1
 net.ipv6.conf.default.disable_ipv6 = 0
-vm.swappiness=10
-vm.vfs_cache_pressure=50" >> /etc/sysctl.conf
+vm.swappiness = 10
+vm.vfs_cache_pressure = 50" >> /etc/sysctl.conf
 echo ""
 sysctl -p /etc/sysctl.conf
 		echo ""
